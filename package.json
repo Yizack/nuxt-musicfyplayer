@@ -1,0 +1,66 @@
+{
+  "name": "nuxt-musicfyplayer",
+  "version": "0.0.0",
+  "description": "Embed a simple and beautiful HTML music player from local or hosted audio on your website using MediaElement.js and ColorThief.js",
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "music-player",
+    "music"
+  ],
+  "repository": "Yizack/nuxt-musicfyplayer",
+  "homepage": "https://github.com/Yizack/nuxt-musicfyplayer",
+  "author": {
+    "name": "Yizack Rangel",
+    "email": "yizackr@gmail.com",
+    "url": "https://yizack.com/"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\"",
+    "test:watch": "vitest watch"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.10.1",
+    "colorthief": "^2.4.0",
+    "mediaelement": "^7.0.3"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.0.8",
+    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxt/module-builder": "^0.5.5",
+    "@nuxt/schema": "^3.10.1",
+    "@nuxt/test-utils": "^3.11.0",
+    "@types/node": "^20.11.17",
+    "changelogen": "^0.5.5",
+    "eslint": "^8.56.0",
+    "nuxt": "^3.10.1",
+    "vitest": "^1.2.2"
+  },
+  "changelog": {
+    "repo": {
+      "repo": "Yizack/nuxt-musicfyplayer",
+      "provider": "github",
+      "domain": "github.com"
+    }
+  }
+}

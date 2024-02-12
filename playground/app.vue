@@ -1,0 +1,25 @@
+<script setup lang="ts">
+const config = defineMusicfyPlayer({
+  audio: {
+    provider: "dropbox",
+    type: "audio/mpeg",
+    id: "soep3xvq8aee4eh6hcj4r",
+    rlkey: "g7sqo9y5zl3f69oxftzo5auc5"
+  },
+  image: {
+    src: "https://dimatis.yizack.com/images/reminiscences.jpg",
+    alt: "Dimatis - Reminiscences"
+  },
+  size: {
+    width: "100%",
+    height: "500px"
+  },
+  color: {
+    detect: true
+  }
+})
+</script>
+
+<template>
+  <MusicfyPlayer :config="config" />
+</template>

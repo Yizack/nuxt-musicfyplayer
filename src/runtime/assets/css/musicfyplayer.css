@@ -1,0 +1,160 @@
+/* mediaelement */
+
+.mejs__container, .mejs__controls {
+  background: transparent!important;
+}
+
+.mejs__container {
+  width: 100%!important;
+  min-width: 100%!important;
+}
+
+.mejs__controls {
+  display: flex!important;
+  flex-direction: column!important;
+  padding: 0!important;
+}
+
+.mejs__button {
+  width: 100%!important;
+}
+
+.mejs__button>button {
+  overflow: visible!important;
+}
+
+.mejs__button, .mejs__time, .mejs__time-rail {
+  height: 0!important;
+}
+
+.mejs__time-rail {
+  padding: 0!important;
+  width: 100%!important;
+  margin: 0!important;
+}
+
+.mejs__time {
+  height: 2rem!important;
+  padding: 0!important;
+  display: flex!important;
+  justify-content: space-between!important;
+}
+
+.mejs__play button, .mejs__pause button {
+  margin: 0;
+  top: -0.5rem;
+}
+
+.mejs__currenttime, .mejs__duration {
+  align-self: flex-end!important;
+}
+
+.mejs__play button::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23fff' viewBox='4 3.5 9 9'%3E%3Cpath d='m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z'/%3E%3C/svg%3E");
+}
+
+.mejs__pause button::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23fff' viewBox='4 3.5 9 9'%3E%3Cpath d='M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.mejs__volume-button button {
+  margin: 0;
+  top: -3.05rem;
+  right: 3.5rem;
+}
+
+.mejs__volume-button.mejs__mute button::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23fff' viewBox='1 1.5 13 13'%3E%3Cpath d='M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z'/%3E%3Cpath d='M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z'/%3E%3Cpath d='M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z'/%3E%3C/svg%3E");
+}
+
+.mejs__volume-button.mejs__unmute button::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23fff' viewBox='1 1.5 13 13'%3E%3Cpath d='M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+.mejs__horizontal-volume-slider {
+  width: 100%!important;
+  height: 0!important;
+}
+
+.mejs__horizontal-volume-total {
+  background: hsl(0deg 0% 100% / 30%)!important;
+  top: -2.75rem!important;
+  right: 0!important;
+  left: unset!important;
+  cursor: pointer;
+}
+
+.mejs__pause svg.mejs__icon-pause, .mejs__play svg.mejs__icon-play, .mejs__replay svg.mejs__icon-replay {
+  display: none;
+}
+
+/* musicfyplayer player style */
+
+.musicfyplayer {
+  overflow: hidden;
+  text-align: center;
+  border-radius: .5rem!important;
+}
+
+@media (width <= 385px) {
+  .musicfyplayer {
+    height: unset!important;
+  }
+}
+
+.musicfyplayer.musicfyplayer-color {
+  background-color: #020420;
+}
+
+.musicfyplayer .box {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 80%));
+}
+
+.musicfyplayer .controls {
+  color: #fff;
+  padding: 1.5rem 1rem;
+}
+
+.musicfyplayer .music {
+  width: 100%;
+}
+
+.musicfyplayer .cover {
+  overflow-y: hidden;
+  flex: 1 1 0%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.musicfyplayer .box-1 {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.musicfyplayer .box-2 {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.musicfyplayer .box-3 {
+  min-width: 80px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.musicfyplayer .image {
+  background-repeat: no-repeat!important;
+  background-size: contain!important;
+  background-position: center top!important;
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
