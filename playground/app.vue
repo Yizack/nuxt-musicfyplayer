@@ -11,7 +11,6 @@ const config = defineMusicfyPlayer({
     alt: "Dimatis - Reminiscences"
   },
   size: {
-    width: "100%",
     height: "500px"
   },
   color: {

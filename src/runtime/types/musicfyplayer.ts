@@ -11,7 +11,10 @@ export interface MusicfyPlayerDefinition {
     detect?: boolean;
     class?: string;
   }
-  size?: { width: string; height: string; };
+  size?: {
+    width?: string;
+    height?: string;
+  };
 }
 
 export interface LocalAudio {

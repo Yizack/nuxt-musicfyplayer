@@ -11,7 +11,7 @@ export const defineMusicfyPlayer = (config: MusicfyPlayerDefinition): MusicfyPla
   const provider = config.audio.provider || 'local'
   const size = {
     width: config.size?.width || '100%',
-    height: config.size?.height || '100%'
+    height: config.size?.height || '450px'
   }
 
   switch (provider) {
@@ -30,8 +30,8 @@ export const defineMusicfyPlayer = (config: MusicfyPlayerDefinition): MusicfyPla
 
   return {
     imageSrc: config.image.src,
-    imageAlt: config.image.alt,
-    audioType: config.audio.type,
+    imageAlt: config.image.alt || 'Musicfy Player',
+    audioType: config.audio.type || 'audio/mpeg',
     audioSrc: audioSrc.value,
     sizeWidth: size.width,
     sizeHeight: size.height,
