@@ -61,8 +61,10 @@ Define your configuration options with the `defineMusicfyPlayer` composable.
 
 ### Supported audio providers
 
-- [Local audio](#local-audio-properties)
-- [Dropbox](#dropbox-audio-properties)
+| Provider                             | Value    |
+|--------------------------------------|----------|
+| [URL](#local-audio-properties)     | `local`  |
+| [Dropbox](#dropbox-audio-properties) | `dropbox`|
 
 ### Local audio properties
 
