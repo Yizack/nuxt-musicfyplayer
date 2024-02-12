@@ -1,3 +1,5 @@
+![musicfyplayer](https://github.com/Yizack/nuxt-musicfyplayer/assets/16264115/bb7af99c-73db-4841-b539-275b4611e4c9)
+
 # nuxt-musicfyplayer
 
 [![npm version][npm-version-src]][npm-version-href]
