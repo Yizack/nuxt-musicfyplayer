@@ -1,4 +1,4 @@
-![musicfyplayer](https://github.com/Yizack/nuxt-musicfyplayer/assets/16264115/bb7af99c-73db-4841-b539-275b4611e4c9)
+![musicfyplayer](https://github.com/Yizack/nuxt-musicfyplayer/assets/16264115/d1603014-8331-4327-9b65-4ff580c3624d)
 
 # nuxt-musicfyplayer
 
