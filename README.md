@@ -132,6 +132,16 @@ const config = defineMusicfyPlayer({
 </template>
 ```
 
+### More examples
+
+Example of use on a website: [Dimatis Website](https://dimatis.yizack.com)
+
+[![Live Demo](https://yizack.com/images/embeddable-music-player/embeddeds.jpg)](https://dimatis.yizack.com)
+
+[![Live Demo](https://yizack.com/images/embeddable-music-player/embeddeds2.jpg)](https://dimatis.yizack.com/music/fly-again)
+
+Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-musicfyplayer?file=playground%2Fapp.vue) for more examples.
+
 ## Credits
 
 - Detect dominant color with [ColorThief](https://lokeshdhakar.com/projects/color-thief/)
