@@ -15,7 +15,7 @@ const size = ref({ width: props.config.sizeWidth, height: props.config.sizeHeigh
 const backgroundColor = ref<string | undefined>()
 
 const generateColor = async () => {
-  if (process.client && props.config.colorDetect) {
+  if (import.meta.client && props.config.colorDetect) {
     const img = new Image()
     img.crossOrigin = 'Anonymous'
     img.src = props.config.imageSrc
