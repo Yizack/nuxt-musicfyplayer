@@ -62,5 +62,6 @@
       "provider": "github",
       "domain": "github.com"
     }
-  }
+  },
+  "packageManager": "pnpm@9.4.0"
 }
