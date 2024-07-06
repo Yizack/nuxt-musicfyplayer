@@ -52,6 +52,15 @@ importers:
         specifier: ^2.0.26
         version: 2.0.26(typescript@5.3.3)
 
+  playground:
+    dependencies:
+      nuxt:
+        specifier: latest
+        version: 3.12.3(@parcel/watcher@2.4.1)(@types/node@20.14.10)(encoding@0.1.13)(eslint@9.6.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.3)(rollup@4.18.0)(terser@5.27.0)(typescript@5.3.3)(vite@5.3.3(@types/node@20.14.10)(terser@5.27.0))(vue-tsc@2.0.26(typescript@5.3.3))
+      nuxt-musicfyplayer:
+        specifier: latest
+        version: 2.0.0(magicast@0.3.4)(rollup@4.18.0)
+
 packages:
 
   '@aashutoshrathi/word-wrap@1.2.6':
@@ -3377,6 +3386,9 @@ packages:
     resolution: {integrity: sha512-6vRdiXTw9SajEQOUi6Ze/XaIXzy1q/sD5UqHQSv3yqTu7Pot5S7fEihNXV8LpcgLz+9HzjVt70r7jYe7R99c2w==}
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
+
+  nuxt-musicfyplayer@2.0.0:
+    resolution: {integrity: sha512-+Ccd5lekn9/9b009PJDKH4ofuuFOgWNl1l9bS0yVUx3BGqSLuUcf/Q44UylirBgWrAMPfbBhP5ARlDYLtPVgRw==}
 
   nuxt@3.12.3:
     resolution: {integrity: sha512-Qdkc+ucWwFcKsiL/OTF87jbgyFSymwPRKiiu0mvzsd/RXTn4hGiBduAlF3f7Yy0F9pDjSj8XHKDSnHYsDzm6rA==}
@@ -8662,6 +8674,16 @@ snapshots:
   nuxi@3.12.0:
     optionalDependencies:
       fsevents: 2.3.3
+
+  nuxt-musicfyplayer@2.0.0(magicast@0.3.4)(rollup@4.18.0):
+    dependencies:
+      '@nuxt/kit': 3.12.3(magicast@0.3.4)(rollup@4.18.0)
+      colorthief: 2.4.0
+      mediaelement: 7.0.5
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
 
   nuxt@3.12.3(@parcel/watcher@2.4.1)(@types/node@20.14.10)(encoding@0.1.13)(eslint@9.6.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.3)(rollup@4.18.0)(terser@5.27.0)(typescript@5.3.3)(vite@5.3.3(@types/node@20.14.10)(terser@5.27.0))(vue-tsc@2.0.26(typescript@5.3.3)):
     dependencies:
