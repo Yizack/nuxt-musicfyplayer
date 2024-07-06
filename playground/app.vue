@@ -10,9 +10,6 @@ const config = defineMusicfyPlayer({
     src: 'https://dimatis.yizack.com/images/reminiscences.jpg',
     alt: 'Dimatis - Reminiscences',
   },
-  size: {
-    height: '500px',
-  },
   color: {
     detect: true,
   },
@@ -20,5 +17,5 @@ const config = defineMusicfyPlayer({
 </script>
 
 <template>
-  <MusicfyPlayer :config="config" />
+  <MusicfyPlayer :config="config" height="500px" />
 </template>

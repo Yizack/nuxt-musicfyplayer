@@ -8,10 +8,18 @@ const props = defineProps({
     type: Object as () => MusicfyPlayerConfig,
     required: true,
   },
+  width: {
+    type: String,
+    default: '100%',
+  },
+  height: {
+    type: String,
+    default: '450px',
+  },
 })
 
 const audio = ref() as Ref<HTMLAudioElement>
-const size = ref({ width: props.config.sizeWidth, height: props.config.sizeHeight })
+const size = ref({ width: props.width, height: props.height })
 const backgroundColor = ref<string | undefined>()
 
 const generateColor = async () => {

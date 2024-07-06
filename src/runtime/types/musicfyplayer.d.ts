@@ -1,29 +1,56 @@
 export interface MusicfyPlayerDefinition {
+  /**
+   * Image configuration
+   */
   image: {
     src: string
-    alt: string
+    /**
+     * Image alt text
+     * @default 'Musicfy Player'
+     */
+    alt?: string
   }
   audio: {
-    provider: string
-    type: string
+    /**
+     * Audio provider
+     * @default 'local'
+     */
+    provider?: string
+    /**
+     * Audio type
+     * @default 'audio/mpeg'
+     */
+    type?: string
   } & (LocalAudio | DropboxAudio)
+  /**
+   * Color configuration
+   */
   color?: {
+    /**
+     * Set if the color should be detected from the image
+     * @default false
+     */
     detect?: boolean
+    /**
+     * Custom class to apply to the player
+     * @default 'musicfyplayer-color'
+     */
     class?: string
-  }
-  size?: {
-    width?: string
-    height?: string
   }
 }
 
 export interface LocalAudio {
-  provider: 'local'
+  provider?: 'local'
+  /**
+   * Path to the audio file
+   * @example '/path/to/audio.mp3'
+   * @example 'https://example.com/audio.mp3'
+   */
   src: string
 }
 
 export interface DropboxAudio {
-  provider: 'dropbox'
+  provider?: 'dropbox'
   id: string
   rlkey?: string
 }
@@ -35,8 +62,6 @@ export interface MusicfyPlayerConfig {
   imageAlt: string
   audioType: string
   audioSrc: string
-  sizeWidth: string
-  sizeHeight: string
   colorClass: string
   colorDetect: boolean
 }
