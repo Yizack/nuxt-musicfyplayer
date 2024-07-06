@@ -5,7 +5,6 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
-<!-- [![Tests][tests-src]][tests-href] -->
 [![Nuxt][nuxt-src]][nuxt-href]
 
 Embed a simple HTML music player from local or hosted audio on your Nuxt app using MediaElement.js and ColorThief.js
@@ -44,14 +43,25 @@ That's it! You can now use `nuxt-musicfyplayer` in your Nuxt app ✨
 
 In the project, use the component `<MusicfyPlayer :config="" />`, where `config` is the configuration options of the player.
 
+### Component properties
+
+## Size properties
+
+| Property                              | Description              | Default value |
+|---------------------------------------|--------------------------|---------------|
+| [`config`](#musicfyplayer-definition) | MusicfyPlayer definition |               |
+| `width`                               | Music player width       | `100%`        |
+| `height`                              | Music player height      | `450px`       |
+
+## MusicfyPlayer Definition
+
 Define your configuration options with the `defineMusicfyPlayer` composable.
 
-| Property                   | Description                           |
-|----------------------------|---------------------------------------|
+| Property                            | Description                           |
+|-------------------------------------|---------------------------------------|
 | [`audio`](#audio-shared-properties) | The audio source properties           |
-| [`image`](#image-properties) | The image source (preferably squared) |
-| [`size`](#size-properties)   | The size of your player               |
-| [`color`](#color-properties) | Color options                         |
+| [`image`](#image-properties)        | The image source (preferably squared) |
+| [`color`](#color-properties)        | Color options                         |
 
 ## Audio shared properties
 
@@ -65,7 +75,7 @@ Define your configuration options with the `defineMusicfyPlayer` composable.
 
 | Provider                             | Value    |
 |--------------------------------------|----------|
-| [URL](#local-audio-properties)     | `local`  |
+| [URL](#local-audio-properties)       | `local`  |
 | [Dropbox](#dropbox-audio-properties) | `dropbox`|
 
 ### Local audio properties
@@ -87,13 +97,6 @@ Define your configuration options with the `defineMusicfyPlayer` composable.
 |----------|------------------------|----------|
 | `src`    | Image source link      | Yes      |
 | `alt`    | Image alternative text | No       |
-
-## Size properties
-
-| Property | Description            | Default value |
-|----------|------------------------|---------------|
-| `width`  | Music player width     | `100%`        |
-| `height` | Music player height    | `450px`       |
 
 ## Color properties
 
@@ -118,9 +121,6 @@ const config = defineMusicfyPlayer({
     src: "https://dimatis.yizack.com/images/reminiscences.jpg",
     alt: "Dimatis - Reminiscences"
   },
-  size: {
-    width: "100%"
-  },
   color: {
     detect: true
   }
@@ -128,7 +128,7 @@ const config = defineMusicfyPlayer({
 </script>
 
 <template>
-  <MusicfyPlayer :config="config" />
+  <MusicfyPlayer :config="config" width="100%" />
 </template>
 ```
 
@@ -175,17 +175,17 @@ npm run release
 ```
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-musicfyplayer/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-musicfyplayer/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/nuxt-musicfyplayer
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-musicfyplayer.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-musicfyplayer.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-downloads-href]: https://npmjs.com/package/nuxt-musicfyplayer
 
-[license-src]: https://img.shields.io/npm/l/nuxt-musicfyplayer.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-src]: https://img.shields.io/npm/l/nuxt-musicfyplayer.svg?style=flat&colorA=020420&colorB=00DC82
 [license-href]: LICENSE
 
-[tests-src]: https://img.shields.io/github/actions/workflow/status/Yizack/nuxt-musicfyplayer/tests.yml?style=flat&colorA=18181B&colorB=28CF8D&label=tests
+[tests-src]: https://img.shields.io/github/actions/workflow/status/Yizack/nuxt-musicfyplayer/tests.yml?style=flat&colorA=020420&colorB=00DC82&label=tests
 [tests-href]: https://github.com/Yizack/nuxt-musicfyplayer/actions/workflows/tests.yml
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
+[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
