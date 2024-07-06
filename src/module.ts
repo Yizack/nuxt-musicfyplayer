@@ -7,16 +7,16 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-musicfyplayer',
     configKey: 'nuxtMusicfyPlayer',
     compatibility: {
-      nuxt: '>=3.0.0'
-    }
+      nuxt: '>=3.0.0',
+    },
   },
-  setup () {
+  setup() {
     const { resolve } = createResolver(import.meta.url)
     addComponent({
       name: 'MusicfyPlayer',
       global: true,
-      filePath: resolve('./runtime/components/MusicfyPlayer.vue')
+      filePath: resolve('./runtime/components/MusicfyPlayer.vue'),
     })
     addImportsDir(resolve('./runtime/composables'))
-  }
+  },
 })

@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const config = defineMusicfyPlayer({
   audio: {
-    provider: "dropbox",
-    type: "audio/mpeg",
-    id: "soep3xvq8aee4eh6hcj4r",
-    rlkey: "g7sqo9y5zl3f69oxftzo5auc5"
+    provider: 'dropbox',
+    type: 'audio/mpeg',
+    id: 'soep3xvq8aee4eh6hcj4r',
+    rlkey: 'g7sqo9y5zl3f69oxftzo5auc5',
   },
   image: {
-    src: "https://dimatis.yizack.com/images/reminiscences.jpg",
-    alt: "Dimatis - Reminiscences"
+    src: 'https://dimatis.yizack.com/images/reminiscences.jpg',
+    alt: 'Dimatis - Reminiscences',
   },
   size: {
-    height: "500px"
+    height: '500px',
   },
   color: {
-    detect: true
-  }
+    detect: true,
+  },
 })
 </script>
 

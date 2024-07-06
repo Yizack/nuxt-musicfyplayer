@@ -1,13 +1,13 @@
 <script setup lang='ts'>
-import { onMounted, ref, type Ref } from '#imports'
-import type { MusicfyPlayerConfig } from './../types/musicfyplayer'
 import ColorThief from 'colorthief'
+import type { MusicfyPlayerConfig } from './../types/musicfyplayer'
+import { onMounted, ref, type Ref } from '#imports'
 
 const props = defineProps({
   config: {
     type: Object as () => MusicfyPlayerConfig,
-    required: true
-  }
+    required: true,
+  },
 })
 
 const audio = ref() as Ref<HTMLAudioElement>
@@ -40,7 +40,7 @@ onMounted(async () => {
     timeAndDurationSeparator: '<span></span>',
     iPadUseNativeControls: false,
     iPhoneUseNativeControls: false,
-    AndroidUseNativeControls: false
+    AndroidUseNativeControls: false,
   })
 })
 </script>
