@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  nuxtTwemoji: {},
+  modules: ['nuxt-musicfyplayer'],
   devtools: { enabled: true },
+  imports: {
+    autoImport: true,
+  },
 })

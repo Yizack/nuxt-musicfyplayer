@@ -5,7 +5,7 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
-[![Tests][tests-src]][tests-href]
+<!-- [![Tests][tests-src]][tests-href] -->
 [![Nuxt][nuxt-src]][nuxt-href]
 
 Embed a simple HTML music player from local or hosted audio on your Nuxt app using MediaElement.js and ColorThief.js
