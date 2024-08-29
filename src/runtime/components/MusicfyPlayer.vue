@@ -4,14 +4,25 @@ import type { MusicfyPlayerConfig } from './../types/musicfyplayer'
 import { onMounted, ref, type Ref } from '#imports'
 
 const props = defineProps({
+  /**
+   * The configuration of the player
+   */
   config: {
     type: Object as () => MusicfyPlayerConfig,
     required: true,
   },
+  /**
+   * The width and height of the player
+   * @default '100%'
+   */
   width: {
     type: String,
     default: '100%',
   },
+  /**
+   * The height of the player
+   * @default '450px'
+   */
   height: {
     type: String,
     default: '450px',
