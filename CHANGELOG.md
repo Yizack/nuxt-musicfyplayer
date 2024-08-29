@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v2.0.1
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.0...v2.0.1)
+
+### 🩹 Fixes
+
+- **types:** Add colorthief module augmentation ([c3356b1](https://github.com/Yizack/nuxt-musicfyplayer/commit/c3356b1))
+
+### 📖 Documentation
+
+- Add component props jsdoc ([3dba974](https://github.com/Yizack/nuxt-musicfyplayer/commit/3dba974))
+
+### 🏡 Chore
+
+- Add ci ([40baafd](https://github.com/Yizack/nuxt-musicfyplayer/commit/40baafd))
+- Update lock ([0cd317b](https://github.com/Yizack/nuxt-musicfyplayer/commit/0cd317b))
+- Updates ([9a8b3e9](https://github.com/Yizack/nuxt-musicfyplayer/commit/9a8b3e9))
+
+### ❤️ Contributors
+
+- Yizack Rangel <yizackr@gmail.com>
+
 ## v2.0.0
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v1.0.1...v2.0.0)
