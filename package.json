@@ -8,7 +8,10 @@
     "music-player",
     "music"
   ],
-  "repository": "Yizack/nuxt-musicfyplayer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yizack/nuxt-musicfyplayer.git"
+  },
   "homepage": "https://github.com/Yizack/nuxt-musicfyplayer",
   "author": {
     "name": "Yizack Rangel",
