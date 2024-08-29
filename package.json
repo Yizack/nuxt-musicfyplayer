@@ -41,22 +41,22 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.12.3",
+    "@nuxt/kit": "^3.13.0",
     "colorthief": "^2.4.0",
     "mediaelement": "^7.0.5"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.3.9",
-    "@nuxt/eslint-config": "^0.3.13",
-    "@nuxt/module-builder": "^0.8.1",
-    "@nuxt/schema": "^3.12.3",
-    "@nuxt/test-utils": "^3.13.1",
-    "@types/node": "^20.14.10",
+    "@nuxt/devtools": "^1.4.1",
+    "@nuxt/eslint-config": "^0.5.3",
+    "@nuxt/module-builder": "^0.8.3",
+    "@nuxt/schema": "^3.13.0",
+    "@nuxt/test-utils": "^3.14.1",
+    "@types/node": "^22.5.1",
     "changelogen": "^0.5.5",
-    "eslint": "^9.6.0",
-    "nuxt": "^3.12.3",
-    "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.26"
+    "eslint": "^9.9.1",
+    "nuxt": "^3.13.0",
+    "vitest": "^2.0.5",
+    "vue-tsc": "^2.1.2"
   },
   "changelog": {
     "repo": {
@@ -65,5 +65,5 @@
       "domain": "github.com"
     }
   },
-  "packageManager": "pnpm@9.4.0"
+  "packageManager": "pnpm@9.9.0"
 }
