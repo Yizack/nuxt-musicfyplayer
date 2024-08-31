@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v2.0.2
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.1...v2.0.2)
+
+### 🩹 Fixes
+
+- Add missing replay icon when audio ends ([#2](https://github.com/Yizack/nuxt-musicfyplayer/pull/2))
+
+### 🏡 Chore
+
+- Fix npm repo ([409a72e](https://github.com/Yizack/nuxt-musicfyplayer/commit/409a72e))
+- Adjust pause and play buttons ([ec5a580](https://github.com/Yizack/nuxt-musicfyplayer/commit/ec5a580))
+- Update nuxt eslint ([c0b34cc](https://github.com/Yizack/nuxt-musicfyplayer/commit/c0b34cc))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v2.0.1
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.0...v2.0.1)
