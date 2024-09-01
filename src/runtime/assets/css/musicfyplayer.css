@@ -1,4 +1,6 @@
-/* mediaelement */
+@import 'mediaelement/build/mediaelementplayer.min.css';
+
+/* mediaelementplayer overrides */
 
 .mejs__container, .mejs__controls {
   background: transparent!important;
@@ -92,7 +94,7 @@
   display: none;
 }
 
-/* musicfyplayer player style */
+/* musicfyplayer player styles */
 
 .musicfyplayer {
   overflow: hidden;
@@ -110,7 +112,7 @@
   background-color: #020420;
 }
 
-.musicfyplayer .box {
+.musicfyplayer .mp__box {
   position: relative;
   height: 100%;
   display: flex;
@@ -118,28 +120,28 @@
   background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 80%));
 }
 
-.musicfyplayer .controls {
+.musicfyplayer .mp__controls {
   color: #fff;
   padding: 1.5rem 1rem;
 }
 
-.musicfyplayer .music {
+.musicfyplayer .mp__music {
   width: 100%;
 }
 
-.musicfyplayer .cover {
+.musicfyplayer .mp__cover {
   overflow-y: hidden;
   flex: 1 1 0%;
   height: 100%;
   background-color: rgb(0 0 0 / 40%);
 }
 
-.musicfyplayer .box-1 {
+.musicfyplayer .mp__box-1 {
   overflow-y: hidden;
   height: 100%;
 }
 
-.musicfyplayer .box-2 {
+.musicfyplayer .mp__box-2 {
   box-sizing: border-box;
   position: relative;
   height: 100%;
@@ -147,14 +149,14 @@
   padding: 0.5rem;
 }
 
-.musicfyplayer .box-3 {
+.musicfyplayer .mp__box-3 {
   min-width: 80px;
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.musicfyplayer .image {
+.musicfyplayer .mp__image {
   background-repeat: no-repeat!important;
   background-size: contain!important;
   background-position: center top!important;

@@ -66,19 +66,17 @@ onMounted(async () => {
 
 <template>
   <div class="musicfyplayer" :class="{ [`${config.colorClass}`]: config.colorClass }" :style="{ ...size, backgroundColor }">
-    <div class="box">
-      <div class="controls">
-        <div class="lecteur">
-          <audio ref="audio" class="music fc-media">
-            <source :src="config.audioSrc" :type="config.audioType">
-          </audio>
-        </div>
+    <div class="mp__box">
+      <div class="mp__controls">
+        <audio ref="audio" class="mp__music">
+          <source :src="config.audioSrc" :type="config.audioType">
+        </audio>
       </div>
-      <div class="cover">
-        <div class="box-1">
-          <div class="box-2">
-            <div class="box-3">
-              <img class="image" :src="config.imageSrc" :alt="config.imageAlt">
+      <div class="mp__cover">
+        <div class="mp__box-1">
+          <div class="mp__box-2">
+            <div class="mp__box-3">
+              <img class="mp__image" :src="config.imageSrc" :alt="config.imageAlt">
             </div>
           </div>
         </div>
@@ -88,6 +86,5 @@ onMounted(async () => {
 </template>
 
 <style>
-@import 'mediaelement/build/mediaelementplayer.min.css';
 @import './../assets/css/musicfyplayer.css';
 </style>
