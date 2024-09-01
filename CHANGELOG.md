@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v2.0.3
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.2...v2.0.3)
+
+### 🩹 Fixes
+
+- Display cover inline in case style was set ([b50f919](https://github.com/Yizack/nuxt-musicfyplayer/commit/b50f919))
+
+### 💅 Refactors
+
+- Rename css classes to avoid conflicts ([6894f38](https://github.com/Yizack/nuxt-musicfyplayer/commit/6894f38))
+
+### 🏡 Chore
+
+- Remove unnecessary important ([2ef3f94](https://github.com/Yizack/nuxt-musicfyplayer/commit/2ef3f94))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v2.0.2
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.1...v2.0.2)
