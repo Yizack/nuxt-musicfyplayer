@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v2.1.0
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.3...v2.1.0)
+
+### 🚀 Enhancements
+
+- Add `preload` property ([0894b21](https://github.com/Yizack/nuxt-musicfyplayer/commit/0894b21))
+
+### 🩹 Fixes
+
+- **types:** Regenerate lock ([8621eaa](https://github.com/Yizack/nuxt-musicfyplayer/commit/8621eaa))
+
+### 🏡 Chore
+
+- Updates ([fbe1ea3](https://github.com/Yizack/nuxt-musicfyplayer/commit/fbe1ea3))
+- Update dependencies ([c0a5884](https://github.com/Yizack/nuxt-musicfyplayer/commit/c0a5884))
+
+### ❤️ Contributors
+
+- Yizack Rangel <yizackr@gmail.com>
+
 ## v2.0.3
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.2...v2.0.3)
