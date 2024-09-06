@@ -69,6 +69,7 @@ Define your configuration options with the `defineMusicfyPlayer` composable.
 |------------|----------------------------------|---------------|
 | `provider` | Provider of the audio source.    | `local`       |
 | `type`     | Content-type fo the audio source | `audio/mpeg`  |
+| `preload`  | Preload the audio source         | `auto`        |
 | [`...`](#supported-audio-providers) | Selected audio provider properties ||
 
 ### Supported audio providers
@@ -114,6 +115,7 @@ Use the emoji property to render an emoji by character.
 const config = defineMusicfyPlayer({
   audio: {
     provider: "dropbox",
+    preload: "none",
     id: "soep3xvq8aee4eh6hcj4r",
     rlkey: "g7sqo9y5zl3f69oxftzo5auc5"
   },

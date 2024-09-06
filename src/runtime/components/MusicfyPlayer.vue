@@ -68,7 +68,7 @@ onMounted(async () => {
   <div class="musicfyplayer" :class="{ [`${config.colorClass}`]: config.colorClass }" :style="{ ...size, backgroundColor }">
     <div class="mp__box">
       <div class="mp__controls">
-        <audio ref="audio" class="mp__music">
+        <audio ref="audio" class="mp__music" :preload="config.audioPreload">
           <source :src="config.audioSrc" :type="config.audioType">
         </audio>
       </div>

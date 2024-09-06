@@ -27,6 +27,7 @@ export const defineMusicfyPlayer = (config: MusicfyPlayerDefinition): MusicfyPla
     imageAlt: config.image.alt || 'Musicfy Player',
     audioType: config.audio.type || 'audio/mpeg',
     audioSrc: audioSrc.value,
+    audioPreload: config.audio.preload || 'auto',
     colorClass: config.color?.class || 'musicfyplayer-color',
     colorDetect: config.color?.detect || false,
   }

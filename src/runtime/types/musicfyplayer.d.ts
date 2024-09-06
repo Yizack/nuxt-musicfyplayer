@@ -21,6 +21,11 @@ export interface MusicfyPlayerDefinition {
      * @default 'audio/mpeg'
      */
     type?: string
+    /**
+     * Specifies if and how the audio file should be loaded when the page loads
+     * @default 'auto'
+     */
+    preload?: 'auto' | 'metadata' | 'none'
   } & (LocalAudio | DropboxAudio)
   /**
    * Color configuration
@@ -62,6 +67,7 @@ export interface MusicfyPlayerConfig {
   imageAlt: string
   audioType: string
   audioSrc: string
+  audioPreload: MusicfyPlayerDefinition['audio']['preload']
   colorClass: string
   colorDetect: boolean
 }

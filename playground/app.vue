@@ -3,6 +3,7 @@ const config = defineMusicfyPlayer({
   audio: {
     provider: 'dropbox',
     type: 'audio/mpeg',
+    preload: 'none',
     id: 'soep3xvq8aee4eh6hcj4r',
     rlkey: 'g7sqo9y5zl3f69oxftzo5auc5',
   },
