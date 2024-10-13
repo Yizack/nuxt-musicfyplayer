@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.1.1
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.0...v2.1.1)
+
+### 🩹 Fixes
+
+- Lock colorthief dependency to 2.4.0 ([7349f6c](https://github.com/Yizack/nuxt-musicfyplayer/commit/7349f6c))
+
+### 🏡 Chore
+
+- Update dependencies ([8a96447](https://github.com/Yizack/nuxt-musicfyplayer/commit/8a96447))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v2.1.0
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.0.3...v2.1.0)
