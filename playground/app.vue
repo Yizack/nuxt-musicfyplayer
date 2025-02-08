@@ -8,7 +8,7 @@ const config = defineMusicfyPlayer({
     rlkey: 'g7sqo9y5zl3f69oxftzo5auc5',
   },
   image: {
-    src: 'https://dimatis.yizack.com/images/reminiscences.jpg',
+    src: 'https://dimatis.music/images/reminiscences.jpg',
     alt: 'Dimatis - Reminiscences',
   },
   color: {
