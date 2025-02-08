@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.1.2
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.1...v2.1.2)
+
+### 💅 Refactors
+
+- Rename `useMusicfyPlayer` composable + backwards compatibility ([3967e14](https://github.com/Yizack/nuxt-musicfyplayer/commit/3967e14))
+
+### 🏡 Chore
+
+- **playground:** Fix image src ([786f89a](https://github.com/Yizack/nuxt-musicfyplayer/commit/786f89a))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](http://github.com/Yizack))
+
 ## v2.1.1
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.0...v2.1.1)
