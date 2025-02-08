@@ -8,7 +8,7 @@ import { ref } from '#imports'
  * @param config - Musicfy Player composable configuration
  * @returns Musicfy Player configuration
  */
-export const useMusicfyPlayer = <T extends keyof Providers>(config: MusicfyPlayerComposableConfig<T>): MusicfyPlayerConfig => {
+export const useMusicfyPlayer = <T extends keyof Providers = 'local'>(config: MusicfyPlayerComposableConfig<T>): MusicfyPlayerConfig => {
   const audioSrc = ref<string>()
   const provider = config.audio.provider || 'local'
 
