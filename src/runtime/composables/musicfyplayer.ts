@@ -1,24 +1,18 @@
-import type { MusicfyPlayerConfig, MusicfyPlayerDefinition, LocalAudio, DropboxAudio } from './../types/musicfyplayer'
+import { getSource } from '../utils/sources'
+import type { Providers } from '../types/providers'
+import type { MusicfyPlayerConfig, MusicfyPlayerComposableConfig } from './../types/musicfyplayer'
 import { ref } from '#imports'
 
-const srcDropbox = (id: string, rlkey?: string) => {
-  const dropboxBase = 'https://www.dropbox.com'
-  return rlkey ? `${dropboxBase}/scl/fi/${id}/?rlkey=${rlkey}&dl=1` : `${dropboxBase}/s/${id}?dl=1`
-}
-
-export const defineMusicfyPlayer = (config: MusicfyPlayerDefinition): MusicfyPlayerConfig => {
+/**
+ * Musicfy Player composable
+ * @param config - Musicfy Player composable configuration
+ * @returns Musicfy Player configuration
+ */
+export const useMusicfyPlayer = <T extends keyof Providers>(config: MusicfyPlayerComposableConfig<T>): MusicfyPlayerConfig => {
   const audioSrc = ref<string>()
   const provider = config.audio.provider || 'local'
 
-  switch (provider) {
-    default:
-    case 'local':
-      audioSrc.value = (config.audio as LocalAudio).src
-      break
-    case 'dropbox':
-      audioSrc.value = srcDropbox((config.audio as DropboxAudio).id, (config.audio as DropboxAudio).rlkey)
-      break
-  }
+  audioSrc.value = getSource(provider, config.audio)
 
   if (!audioSrc.value) throw new Error('Invalid audio source')
 
@@ -32,3 +26,5 @@ export const defineMusicfyPlayer = (config: MusicfyPlayerDefinition): MusicfyPla
     colorDetect: config.color?.detect || false,
   }
 }
+
+export const defineMusicfyPlayer = useMusicfyPlayer

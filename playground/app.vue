@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const config = defineMusicfyPlayer({
+const config = useMusicfyPlayer({
   audio: {
     provider: 'dropbox',
     type: 'audio/mpeg',

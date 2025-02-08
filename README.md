@@ -49,13 +49,13 @@ In the project, use the component `<MusicfyPlayer :config="" />`, where `config`
 
 | Property                              | Description              | Default value |
 |---------------------------------------|--------------------------|---------------|
-| [`config`](#musicfyplayer-definition) | MusicfyPlayer definition |               |
+| [`config`](#musicfyplayer-composale)  | MusicfyPlayer composable |               |
 | `width`                               | Music player width       | `100%`        |
 | `height`                              | Music player height      | `450px`       |
 
-## MusicfyPlayer Definition
+## MusicfyPlayer composable
 
-Define your configuration options with the `defineMusicfyPlayer` composable.
+Define your configuration options with the `useMusicfyPlayer` composable.
 
 | Property                            | Description                           |
 |-------------------------------------|---------------------------------------|
@@ -108,11 +108,11 @@ Define your configuration options with the `defineMusicfyPlayer` composable.
 
 ## Example
 
-Use the emoji property to render an emoji by character.
+Use the `useMusicfyPlayer` composable to define the configuration options of the player.
 
 ```html
 <script setup lang="ts">
-const config = defineMusicfyPlayer({
+const config = useMusicfyPlayer({
   audio: {
     provider: "dropbox",
     preload: "none",

@@ -1,4 +1,6 @@
-export interface MusicfyPlayerDefinition {
+import type { Providers } from './providers'
+
+export interface MusicfyPlayerComposableConfig<T extends keyof Providers> {
   /**
    * Image configuration
    */
@@ -10,12 +12,15 @@ export interface MusicfyPlayerDefinition {
      */
     alt?: string
   }
+  /**
+   * Audio configuration
+   */
   audio: {
     /**
      * Audio provider
      * @default 'local'
      */
-    provider?: string
+    provider?: T
     /**
      * Audio type
      * @default 'audio/mpeg'
@@ -26,7 +31,7 @@ export interface MusicfyPlayerDefinition {
      * @default 'auto'
      */
     preload?: 'auto' | 'metadata' | 'none'
-  } & (LocalAudio | DropboxAudio)
+  } & Providers[T]
   /**
    * Color configuration
    */
@@ -44,30 +49,12 @@ export interface MusicfyPlayerDefinition {
   }
 }
 
-export interface LocalAudio {
-  provider?: 'local'
-  /**
-   * Path to the audio file
-   * @example '/path/to/audio.mp3'
-   * @example 'https://example.com/audio.mp3'
-   */
-  src: string
-}
-
-export interface DropboxAudio {
-  provider?: 'dropbox'
-  id: string
-  rlkey?: string
-}
-
-export type AudioConfig = LocalAudio | DropboxAudio
-
 export interface MusicfyPlayerConfig {
   imageSrc: string
   imageAlt: string
   audioType: string
   audioSrc: string
-  audioPreload: MusicfyPlayerDefinition['audio']['preload']
+  audioPreload: MusicfyPlayerComposableConfig['audio']['preload']
   colorClass: string
   colorDetect: boolean
 }
