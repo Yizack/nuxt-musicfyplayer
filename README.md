@@ -49,7 +49,7 @@ In the project, use the component `<MusicfyPlayer :config="" />`, where `config`
 
 | Property                              | Description              | Default value |
 |---------------------------------------|--------------------------|---------------|
-| [`config`](#musicfyplayer-composale)  | MusicfyPlayer composable |               |
+| [`config`](#musicfyplayer-composable) | MusicfyPlayer composable |               |
 | `width`                               | Music player width       | `100%`        |
 | `height`                              | Music player height      | `450px`       |
 
