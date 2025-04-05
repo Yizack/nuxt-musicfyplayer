@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v2.1.3
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.2...v2.1.3)
+
+### 🩹 Fixes
+
+- **types:** Add default local provider option ([b243448](https://github.com/Yizack/nuxt-musicfyplayer/commit/b243448))
+
+### 📖 Documentation
+
+- Fix example image ([daa76b4](https://github.com/Yizack/nuxt-musicfyplayer/commit/daa76b4))
+- Fix typo ([3b9b409](https://github.com/Yizack/nuxt-musicfyplayer/commit/3b9b409))
+
+### 📦 Build
+
+- Update module-builder and drop cjs support ([c2dd078](https://github.com/Yizack/nuxt-musicfyplayer/commit/c2dd078))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.2
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.1...v2.1.2)
