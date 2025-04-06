@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.4
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.3...v2.1.4)
+
+### 💅 Refactors
+
+- Drop `colorthief` in favor of `fast-average-color` ([fc85127](https://github.com/Yizack/nuxt-musicfyplayer/commit/fc85127))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.3
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.2...v2.1.3)
