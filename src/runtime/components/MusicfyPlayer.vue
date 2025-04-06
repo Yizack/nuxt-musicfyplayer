@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import { FastAverageColor } from 'fast-average-color'
 import type { MusicfyPlayerConfig } from './../types/musicfyplayer'
+import { getImageAverageColor } from './../utils/average-color'
 import { onMounted, ref, useTemplateRef } from '#imports'
 
 const props = withDefaults(defineProps<{
@@ -29,15 +29,9 @@ const size = ref({ width: props.width, height: props.height })
 const backgroundColor = ref<string | undefined>()
 
 if (import.meta.client && props.config.colorDetect) {
-  const img = new Image()
-  img.crossOrigin = 'Anonymous'
-  img.src = props.config.imageSrc
-
-  img.onload = () => {
-    const fac = new FastAverageColor()
-    const color = fac.getColor(img)
-    backgroundColor.value = color ? color.rgba : undefined
-  }
+  getImageAverageColor(props.config.imageSrc).then((color) => {
+    backgroundColor.value = color
+  }).catch(console.error)
 }
 
 onMounted(async () => {
