@@ -146,6 +146,7 @@ Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt
 
 ## Credits
 
+- Built based on [embeddable-music-player](https://github.com/Yizack/embeddable-music-player)
 - Detect average color with [fast-average-color](https://github.com/fast-average-color/fast-average-color)
 - Music player controls by [MediaElement.js](https://www.mediaelementjs.com/)
 - [Nuxt](https://github.com/nuxt/nuxt), the JavaScript framework for creating SSR Vue applications and its [Module Author Guide](https://nuxt.com/docs/guide/going-further/modules)
