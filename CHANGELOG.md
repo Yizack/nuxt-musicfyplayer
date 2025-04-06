@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v2.1.6
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.5...v2.1.6)
+
+### 💅 Refactors
+
+- Use `getColorAsync` from `fast-average-color` ([22f20d5](https://github.com/Yizack/nuxt-musicfyplayer/commit/22f20d5))
+
+### 📖 Documentation
+
+- Mention `embeddable-music-player` ([2e332d3](https://github.com/Yizack/nuxt-musicfyplayer/commit/2e332d3))
+
+### 🏡 Chore
+
+- Import minifed mediaelement ([3d9c6c2](https://github.com/Yizack/nuxt-musicfyplayer/commit/3d9c6c2))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.5
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.4...v2.1.5)
