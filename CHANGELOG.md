@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.5
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.4...v2.1.5)
+
+### 💅 Refactors
+
+- Use average color util for component ([4372387](https://github.com/Yizack/nuxt-musicfyplayer/commit/4372387))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.4
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.3...v2.1.4)
