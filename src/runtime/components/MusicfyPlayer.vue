@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import ColorThief from 'colorthief'
+import { FastAverageColor } from 'fast-average-color'
 import type { MusicfyPlayerConfig } from './../types/musicfyplayer'
 import { onMounted, ref, useTemplateRef } from '#imports'
 
@@ -34,9 +34,9 @@ if (import.meta.client && props.config.colorDetect) {
   img.src = props.config.imageSrc
 
   img.onload = () => {
-    const colorThief = new ColorThief()
-    const color = colorThief.getColor(img)
-    backgroundColor.value = color ? `rgb(${color[0]}, ${color[1]}, ${color[2]})` : undefined
+    const fac = new FastAverageColor()
+    const color = fac.getColor(img)
+    backgroundColor.value = color ? color.rgba : undefined
   }
 }
 

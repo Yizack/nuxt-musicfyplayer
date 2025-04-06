@@ -12,3 +12,9 @@ export interface MediaElementPlayerOptions {
   iPhoneUseNativeControls: boolean
   AndroidUseNativeControls: boolean
 }
+
+declare global {
+  interface Window {
+    MediaElementPlayer?: MediaElementPlayer
+  }
+}

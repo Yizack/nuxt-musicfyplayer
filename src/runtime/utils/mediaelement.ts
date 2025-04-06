@@ -1,12 +1,6 @@
 import 'mediaelement/build/mediaelement-and-player.js'
 import { createError } from 'h3'
-import type { MediaElementPlayer, MediaElementPlayerOptions } from '../types/mediaelement'
-
-declare global {
-  interface Window {
-    MediaElementPlayer: MediaElementPlayer | undefined
-  }
-}
+import type { MediaElementPlayerOptions } from '../types/mediaelement'
 
 export const mediaElementPlayer = (element: HTMLAudioElement, options: MediaElementPlayerOptions) => {
   const MediaElementPlayer = window.MediaElementPlayer

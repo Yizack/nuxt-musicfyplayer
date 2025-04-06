@@ -1,7 +1,7 @@
 {
   "name": "nuxt-musicfyplayer",
   "version": "2.1.3",
-  "description": "Embed a simple and beautiful HTML music player from local or hosted audio on your website using MediaElement.js and ColorThief.js",
+  "description": "Embed a simple and beautiful HTML music player from local or hosted audio on your website using MediaElement.js and fast-average-color",
   "keywords": [
     "nuxt",
     "nuxt3",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.16.2",
-    "colorthief": "2.4.0",
+    "fast-average-color": "^9.5.0",
     "mediaelement": "^7.0.7"
   },
   "devDependencies": {

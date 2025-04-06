@@ -7,7 +7,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Embed a simple HTML music player from local or hosted audio on your Nuxt app using MediaElement.js and ColorThief.js
+Embed a simple HTML music player from local or hosted audio on your Nuxt app using MediaElement.js and fast-average-color
 
 - [✨ Release Notes](https://github.com/Yizack/nuxt-musicfyplayer/blob/main/CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt-musicfyplayer?file=playground%2Fapp.vue)
@@ -146,7 +146,7 @@ Check out the [🏀 Online playground](https://stackblitz.com/github/yizack/nuxt
 
 ## Credits
 
-- Detect dominant color with [ColorThief](https://lokeshdhakar.com/projects/color-thief/)
+- Detect average color with [fast-average-color](https://github.com/fast-average-color/fast-average-color)
 - Music player controls by [MediaElement.js](https://www.mediaelementjs.com/)
 - [Nuxt](https://github.com/nuxt/nuxt), the JavaScript framework for creating SSR Vue applications and its [Module Author Guide](https://nuxt.com/docs/guide/going-further/modules)
 

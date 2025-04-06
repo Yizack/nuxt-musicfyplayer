@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver, addComponent, addImportsDir, addTypeTemplate } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addComponent, addImportsDir } from '@nuxt/kit'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface ModuleOptions {}
@@ -6,7 +6,7 @@ export interface ModuleOptions {}
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-musicfyplayer',
-    configKey: 'nuxtMusicfyPlayer',
+    configKey: 'musicfyplayer',
     compatibility: {
       nuxt: '>=3.0.0',
     },
@@ -19,9 +19,5 @@ export default defineNuxtModule<ModuleOptions>({
       filePath: resolve('./runtime/components/MusicfyPlayer.vue'),
     })
     addImportsDir(resolve('./runtime/composables'))
-    addTypeTemplate({
-      filename: 'types/colorthief.d.ts',
-      src: resolve('./runtime/types/colorthief.d.ts'),
-    })
   },
 })

@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['nuxt-musicfyplayer'],
+  modules: ['../src/module.ts'],
   imports: {
     autoImport: true,
   },
