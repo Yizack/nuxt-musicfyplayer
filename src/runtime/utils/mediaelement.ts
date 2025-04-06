@@ -1,4 +1,4 @@
-import 'mediaelement/build/mediaelement-and-player.js'
+import 'mediaelement/build/mediaelement-and-player.min.js'
 import { createError } from 'h3'
 import type { MediaElementPlayerOptions } from '../types/mediaelement'
 
