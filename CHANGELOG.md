@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v2.1.7
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.6...v2.1.7)
+
+### 🩹 Fixes
+
+- Remove mejs container outline on focus ([58edffa](https://github.com/Yizack/nuxt-musicfyplayer/commit/58edffa))
+
+### 🏡 Chore
+
+- Update dependencies ([be5dd51](https://github.com/Yizack/nuxt-musicfyplayer/commit/be5dd51))
+
+### 🤖 CI
+
+- Use corepack instead of pnpm action ([9ff4490](https://github.com/Yizack/nuxt-musicfyplayer/commit/9ff4490))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.6
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.5...v2.1.6)
