@@ -11,6 +11,10 @@
   min-width: 100%!important;
 }
 
+.mejs__container:focus {
+  outline-width: 0;
+}
+
 .mejs__controls {
   display: flex;
   flex-direction: column;
