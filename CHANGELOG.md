@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v2.1.8
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.7...v2.1.8)
+
+### 🏡 Chore
+
+- Move pnpm `.npmrc` settings to `pnpm-workspace.yaml` ([df197be](https://github.com/Yizack/nuxt-musicfyplayer/commit/df197be))
+- Update to nuxt v4 ([cd293a1](https://github.com/Yizack/nuxt-musicfyplayer/commit/cd293a1))
+
+### 🤖 CI
+
+- Update autofix-ci ([345b7ce](https://github.com/Yizack/nuxt-musicfyplayer/commit/345b7ce))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.7
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.6...v2.1.7)
