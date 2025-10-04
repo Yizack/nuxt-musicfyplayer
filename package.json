@@ -1,6 +1,6 @@
 {
   "name": "nuxt-musicfyplayer",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "Embed a simple and beautiful HTML music player from local or hosted audio on your website using MediaElement.js and fast-average-color",
   "keywords": [
     "nuxt",

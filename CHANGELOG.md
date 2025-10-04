@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.9
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.8...v2.1.9)
+
+### 🤖 CI
+
+- Use npm trusted publishing ([f51fa4c](https://github.com/Yizack/nuxt-musicfyplayer/commit/f51fa4c))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.8
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.7...v2.1.8)
