@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.1.10
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.9...v2.1.10)
+
+### 🏡 Chore
+
+- Update all deps ([f74ec67](https://github.com/Yizack/nuxt-musicfyplayer/commit/f74ec67))
+- Add local playground image ([3b511b9](https://github.com/Yizack/nuxt-musicfyplayer/commit/3b511b9))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.9
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.8...v2.1.9)
