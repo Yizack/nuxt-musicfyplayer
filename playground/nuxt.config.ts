@@ -4,5 +4,5 @@ export default defineNuxtConfig({
     autoImport: true,
   },
   devtools: { enabled: true },
-  compatibilityDate: '2025-08-06',
+  compatibilityDate: '2025-12-10',
 })
