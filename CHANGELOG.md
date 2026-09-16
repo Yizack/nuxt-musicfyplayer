@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v2.1.11
+
+[compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.10...v2.1.11)
+
+### 🏡 Chore
+
+- Update all deps ([f8d615a](https://github.com/Yizack/nuxt-musicfyplayer/commit/f8d615a))
+
+### 🤖 CI
+
+- Drop corepack and migrate actions to use `pnpm/setup` ([fd7acbf](https://github.com/Yizack/nuxt-musicfyplayer/commit/fd7acbf))
+- Automate GitHub release notes ([cc185d5](https://github.com/Yizack/nuxt-musicfyplayer/commit/cc185d5))
+
+### ❤️ Contributors
+
+- Yizack Rangel ([@Yizack](https://github.com/Yizack))
+
 ## v2.1.10
 
 [compare changes](https://github.com/Yizack/nuxt-musicfyplayer/compare/v2.1.9...v2.1.10)
